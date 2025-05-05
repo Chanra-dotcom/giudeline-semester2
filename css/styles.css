@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Navbar Styles */
+
+img {
+  width: auto;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .logo {
+  width: max-content;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar > .menu-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+.logo-img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* First child of navbar without hover */
+.navbar > .menu-list > a:first-child {
+  color: white;
+  padding: 20px;
+}
+
+/* Hover effects for other navbar items except first child */
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 250px;
+  height: calc(100vh - 60px);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.sidebar.hidden {
+  left: -250px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 25px 0;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: slideInMenu 0.5s forwards;
+}
+
+.sidebar ul li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.sidebar ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.sidebar ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.sidebar ul li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.sidebar ul li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  left: -100%;
+  top: 0;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover::after {
+  left: 0;
+}
+
+/* Specific style for Introduction link when active */
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 250px;
+  padding: 40px;
+  transition: 0.3s;
+}
+
+.main-content.full {
+  margin-left: 0;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease-out;
+  transition: all 0.3s ease;
+}
+
+/* Special styling for introduction when active */
+section#introduction.active {
+  background: linear-gradient(135deg, #fff, #f0f0ff);
+  box-shadow: 0 8px 25px rgba(107, 72, 255, 0.2);
+  transform: scale(1.02);
+}
+
+h1 {
+  width: max-content;
+  display: block;
+  color: #6b48ff;
+  margin-bottom: 15px;
+  position: relative;
+  border-bottom: 4px solid #00ddeb;
+  transition: all 0.3s ease;
+}
+
+h1:hover {
+  color: #00ddeb;
+  border-bottom-color: #6b48ff;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInMenu {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    left: -250px;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+p {
+  line-height: 40px;
+  font-size: 20px;
+}

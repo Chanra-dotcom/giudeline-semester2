@@ -1,0 +1,79 @@
+/* Modern table styling */
+.requirements-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.requirements-table th {
+  background-color: #4285f4;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+}
+
+.requirements-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.requirements-table tr:last-child td {
+  border-bottom: none;
+}
+
+.requirements-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.requirements-table tr:hover {
+  background-color: #f1f3f4;
+}
+
+/* Platform column styling */
+.requirements-table td:first-child {
+  font-weight: 500;
+  color: #202124;
+}
+
+/* Table Styling */
+.troubleshooting-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.troubleshooting-table th,
+.troubleshooting-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.troubleshooting-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+}
+
+.troubleshooting-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Table */
+@media (max-width: 600px) {
+  .troubleshooting-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Guidelines</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/gmail.css" />
+    <link rel="stylesheet" href="./css/mail.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>User Guideline</h2>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+          alt=""
+          class="logo-img"
+        />
+      </div>
+      <ul class="menu-list">
+        <li class="list">
+          <a href="mozila.html">Mozila Thunderbird</a>
+        </li>
+        <li class="list"><a href="outlook.html">Microsoft Outlook</a></li>
+        <li class="list">
+          <a href="google_mail.html" class="active">Google Mail</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- <button class="toggle-btn" onclick="toggleSidebar()">☰</button> -->
+
+    <div class="sidebar">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#be-install">Before installing</a></li>
+        <li><a href="#install">installing</a></li>
+        <li><a href="#setup">Setup</a></li>
+        <li><a href="#using">Using Google Mail Send As</a></li>
+        <li><a href="#practice">Best Practices & Security Tips</a></li>
+        <li><a href="#troubleshoot">Troubleshooting</a></li>
+      </ul>
+    </div>
+    <!-- Introduction -->
+    <div class="main-content">
+      <section id="introduction">
+        <h1>Introduction</h1>
+
+        <p>
+          The Google Mail Send As application allows users to send emails from
+          their Gmail account while displaying a different "From" address. This
+          is particularly useful for:
+        </p>
+
+        <img
+          src="img/mail-img-1.jpg"
+          alt=""
+          style="
+            height: 400px;
+            width: 700px;
+            box-shadow: 2px 2px 2px 2px silver;
+          "
+        />
+
+        <p style="margin-left: 35px">
+          ● Managing multiple email aliases (e.g., support@yourdomain.com).
+        </p>
+        <p style="margin-left: 35px">
+          ● Sending emails on behalf of another verified email address.
+        </p>
+        <p style="margin-left: 35px">
+          ● Storing and organizing email templates and attachments securely.
+        </p>
+
+        <p>
+          This guide provides step-by-step instructions for installing,
+          configuring, and using the application effectively.
+        </p>
+      </section>
+      <!-- Before installing -->
+      <section id="be-install">
+        <h1>System Requirements</h1>
+
+        <p>Before installation, ensure your system meets these requirements:</p>
+
+        <table class="requirements-table">
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th>Requirements</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Windows</td>
+              <td>Windows 10/11, 64-bit, 4GB RAM</td>
+            </tr>
+            <tr>
+              <td>macOS</td>
+              <td>macOS 10.15 (Catalina) or later</td>
+            </tr>
+            <tr>
+              <td>Internet</td>
+              <td>Stable connection for setup & verification</td>
+            </tr>
+            <tr>
+              <td>Gmail Account</td>
+              <td>Active Google account with IMAP enabled</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- install -->
+      <section id="install">
+        <h1 style="margin-bottom: 20px">Installation Guide</h1>
+
+        <p style="margin-bottom: 20px; font-size: 20px">
+          1. Downloading from Email Attachment
+        </p>
+
+        <p style="margin-left: 35px; margin: 20px">
+          ● Open the email containing the Google Mail Send As attachment.
+        </p>
+        <p style="margin-left: 35px; margin: 20px">
+          ● Locate the attached file:
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ Windows: .exe file (e.g., GoogleMailSendAs_Setup.exe)
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ macOS: .dmg file (e.g., GoogleMailSendAs.dmg)
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Click Download and save the file to your computer.
+        </p>
+
+        <p style="margin-top: 20px; font-size: 20px">
+          2. Installing on Windows
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Double-click the downloaded .exe file.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● If prompted by User Account Control (UAC), click Yes to allow
+          changes.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Follow the setup wizard:
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ Choose installation location (default recommended).
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ Select Add a desktop shortcut (optional).
+        </p>
+        <p style="margin-left: 80px; margin-top: 20px">■ Click Install.</p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Once installed, click Finish and launch the app.
+        </p>
+
+        <p style="margin-top: 20px; font-size: 20px">3. Installing on macOS</p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Open the downloaded .dmg file.
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Drag the Google Mail Send As icon into the Applications folder.
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Open Applications and double-click the app to launch.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● If blocked by macOS security, go to:
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ System Preferences → Security & Privacy → General → Open Anyway.
+        </p>
+      </section>
+      <!-- Setup -->
+      <section id="setup">
+        <h1 style="margin-bottom: 30px">Setup Google Mail Send As</h1>
+
+        <p style="margin-top: 20px; font-size: 20px">
+          1. Linking Your Google Account
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Open the Google Mail Send As app.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Click Sign in with Google.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Select your Gmail account and grant necessary permissions.
+        </p>
+
+        <p style="margin-top: 20px; font-size: 20px">
+          2. Adding & Verifying an Alternate Email
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Go to Settings → Send Mail As.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Click Add Another Email Address.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Enter the alternate email (e.g., contact@yourbusiness.com).
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Check Treat as an alias (recommended).
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Click Next and complete verification:
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ A confirmation email will be sent to the alternate address.
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ Open the email and click the verification link.
+        </p>
+      </section>
+      <!-- using -->
+      <section id="using">
+        <h1 style="margin-bottom: 30px">Using Google Mail Send As</h1>
+
+        <p style="margin-top: 20px; font-size: 20px">
+          1. Sending Emails from an Alternate Address
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Open Gmail in a browser or the app.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">● Click Compose.</p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● In the From field, select your alternate email.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Write and send the email—it will appear as sent from the chosen
+          address.
+        </p>
+
+        <p style="margin-top: 20px; font-size: 20px">
+          2. Storing & Managing Data
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Save Email Templates:
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ Draft emails can be saved to Google Drive for reuse.
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">● Secure Attachments:</p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ Large files can be stored in Google Drive and shared via link.
+        </p>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ● Encryption (Optional):
+        </p>
+
+        <p style="margin-left: 80px; margin-top: 20px">
+          ■ Enable End-to-End Encryption in settings for sensitive data.
+        </p>
+      </section>
+      <!-- practice -->
+      <section id="practice">
+        <h2 style="margin-bottom: 30px">Best Practices & Security Tips</h2>
+
+        <p style="margin-left: 35px; margin-top: 20px">
+          ✅ Use for Professional Aliases (e.g., support@, info@).
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ✅ Verify All Alternate Emails to avoid sending issues.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ✅ Enable Two-Factor Authentication (2FA) for added security.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ❌ Never impersonate others without explicit permission.
+        </p>
+        <p style="margin-left: 35px; margin-top: 20px">
+          ❌ Avoid sending spam—comply with Google’s policies.
+        </p>
+      </section>
+      <!-- troubleshoot -->
+      <section id="troubleshoot">
+        <h1 style="margin-bottom: 30px">Troubleshooting</h1>
+
+        <table class="troubleshooting-table">
+          <thead>
+            <tr>
+              <th>Issue</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>App won’t install</td>
+              <td>Disable antivirus temporarily or check file integrity.</td>
+            </tr>
+            <tr>
+              <td>"From" field missing</td>
+              <td>Ensure the email is verified in Gmail settings.</td>
+            </tr>
+            <tr>
+              <td>Permission denied</td>
+              <td>The alternate email must authorize sending.</td>
+            </tr>
+            <tr>
+              <td>Emails going to spam</td>
+              <td>Warm up the alias by sending test emails first.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <footer
+      style="z-index: 1000; background-color: black; position: fixed; bottom: 0"
+    ></footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
